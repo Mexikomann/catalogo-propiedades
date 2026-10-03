@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catálogo de Propiedades — Mazatlán</title>
+<style>
+:root { --ink:#1a2330; --mut:#6b7684; --acc:#0f6c5e; --bg:#f4f6f8; --card:#fff; --line:#e2e7ec; }
+* { box-sizing:border-box; }
+body { margin:0; font:16px/1.45 -apple-system, "Segoe UI", Arial, sans-serif; color:var(--ink); background:var(--bg); }
+header { background:var(--ink); color:#fff; padding:22px 28px; }
+header h1 { margin:0; font-size:22px; }
+header p { margin:4px 0 0; color:#b9c2cd; font-size:13px; }
+.wrap { max-width:1180px; margin:0 auto; padding:22px; }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); gap:18px; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:12px; overflow:hidden; cursor:pointer; transition:transform .12s, box-shadow .12s; display:flex; flex-direction:column; }
+.card:hover { transform:translateY(-3px); box-shadow:0 8px 22px rgba(20,30,45,.12); }
+.ph { position:relative; aspect-ratio:4/3; background:#dfe5ea; display:flex; align-items:center; justify-content:center; }
+.phfallback { font-size:64px; color:#9aa6b2; position:absolute; }
+.ph img { position:relative; width:100%; height:100%; object-fit:cover; display:block; z-index:2; }
+.body { padding:12px 14px 14px; display:flex; flex-direction:column; gap:4px; }
+.zone { font-size:12px; text-transform:uppercase; letter-spacing:.04em; color:var(--acc); font-weight:600; }
+h3 { margin:2px 0; font-size:15.5px; line-height:1.25; }
+.price { font-size:19px; font-weight:700; color:var(--ink); }
+.specs { font-size:13px; color:var(--mut); }
+.desc { font-size:13px; color:#4a5461; margin:6px 0 2px; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
+.cta { margin-top:auto; font-size:13px; color:var(--acc); font-weight:600; }
+.flagchip { float:right; font-size:11px; font-weight:700; background:#fdecea; color:#b3261e; border:1px solid #f5c2bf; border-radius:99px; padding:1px 8px; }
+.overlay { position:fixed; inset:0; background:rgba(16,22,30,.6); display:none; align-items:center; justify-content:center; padding:20px; z-index:50; }
+.overlay.open { display:flex; }
+.modal { background:#fff; border-radius:14px; max-width:760px; width:100%; max-height:90vh; overflow:auto; padding:24px; position:relative; }
+.modal img.mph { width:100%; max-height:340px; object-fit:cover; border-radius:10px; margin-bottom:14px; }
+.close { position:absolute; top:12px; right:14px; font-size:26px; cursor:pointer; color:#7b8794; background:#fff; border:none; line-height:1; }
+.close:hover { color:#000; }
+.kv { display:grid; grid-template-columns:auto 1fr; gap:4px 18px; font-size:14px; margin:10px 0; }
+.kv b { color:var(--mut); font-weight:600; text-align:right; }
+.detail-desc { margin:10px 0; color:#333; }
+.flags { background:#fdecea; border:1px solid #f5c2bf; border-radius:10px; padding:10px 14px; margin:10px 0; }
+.flags h4 { margin:0 0 6px; color:#b3261e; }
+.flag { font-size:13px; }
+a.src { display:inline-block; margin-top:10px; color:var(--acc); font-weight:600; }
+.muted { color:var(--mut); font-size:13px; }
+</style>
+<meta name="description" content="Catálogo portátil — 22 fotos incrustadas"></head>
+<body>
+<header>
+  <h1>Catálogo de Propiedades — Mazatlán</h1>
+  <p>Generado 2026-10-02 17:21 · 24 propiedades activas · haz clic en una tarjeta para ver el detalle</p>
+</header>
+<div class="wrap"><div class="grid">
+<article class="card" data-id="39">
+  <div class="ph"><img data-pid="39" alt="Casa Carvajal 1216 (2 pisos)" onerror="this.remove()"><div class="phfallback">C</div></div>
+  <div class="body">
+    <div class="zone">Carvajal</div>
+    <h3>Casa Carvajal 1216 (2 pisos)</h3>
+    <div class="price">Consultar</div>
+    <div class="specs"></div>
+    <p class="desc">Casa de dos pisos: fachada salmon con balcon terracota, porton de metal cafe (cochera/garage) + puerta peatonal, balcon superior con barand…</p>
+    <span class="cta">Ver detalle →</span>
+  </div>
+</article>
+<article class="card" data-id="33">
+  <div class="ph"><img data-pid="33" alt="Casa en Venta en el Centro de Mazatlán" onerror="this.remove()"><div class="phfallback">C</div></div>
+  <div class="body">
+    <div class="zone">Centro · Centro</div>
+    <h3>Casa en Venta en el Centro de Mazatlán</h3>
+    <div class="price">$1,990,000</div>
+    <div class="specs">2 rec · 1.0 baños · 115.0 m² · 145.0 m² terreno</div>
+    <p class="desc">Casa 2 recámaras 1 baño, patio amplio, lista para reacondicionar. A 15 min de playa Olas Altas.</p>
+    <span class="cta">Ver detalle →</span>
+  </div>
+</article>
+<article class="card" data-id="15">
+  <div class="ph"><img data-pid="15" alt="Fixxer Upper 1 Bdr House 2 blocks from Machado Square and Cathedral" onerror="this.remove()"><div class="phfallback">F</div></div>
+  <div class="body">
+    <div class="zone">Centro</div>
+    <h3>Fixxer Upper 1 Bdr House 2 blocks from Machado Square and Cathedral</h3>
+    <div class="price">$2,500,000</div>
+    <div class="specs">1 rec · 1.0 baños · 70.0 m² · 82.0 m² terreno</div>
+    <p class="desc">Fixxer Upper 1 Bdr House 2 blocks from Machado Square and Cathedral</p>
+    <span class="cta">Ver detalle →</span>
+  </div>
+</article>
+<article class="card" data-id="27">
+  <div class="ph"><img data-pid="27" alt="2 Bedroom house in Mazatlán City Center" onerror="this.remove()"><div class="phfallback">2</div></div>
+  <div class="body">
+    <div class="zone">Centro</div>
+    <h3>2 Bedroom house in Mazatlán City Center</h3>
+    <div class="price">$2,900,000</div>
+    <div class="specs">2 rec · 1.0 baños · 102.0 m² · 80.0 m² terreno</div>
+    <p class="desc">2 Bedroom house in Mazatlán City Center</p>
+    <span class="cta">Ver detalle →</span>
+  </div>
+</article>
+<article class="card" data-id="23">
+  <div class="ph"><img data-pid="23" alt="HOUSE FOR SALE" onerror="this.remove()"><div class="phfallback">H</div></div>
+  <div class="body">
+    <div class="zone">Centro</div>
+    <h3>HOUSE FOR SALE</h3>
+    <div class="price">$3,800,000</div>
+    <div class="specs">5 rec · 3.0 baños · 207.0 m² · 84.0 m² terreno</div>
+    <p class="desc">HOUSE FOR SALE</p>
+    <span class="cta">Ver detalle →</span>
+  </div>
+</article>
+<article class="card" data-id="8">
+  <div class="ph"><img data-pid="8" alt="Home for Sale in Downtown Mazatlán" onerror="this.remove()"><div class="phfallback">H</div></div>
+  <div class="body">
+    <div class="zone">Centro</div>
+    <h3>Home for Sale in Downtown Mazatlán</h3>
+    <div class="price">$4,200,000</div>
+    <div class="specs">4 rec · 1.0 baños · 104.0 m² · 251.0 m² terreno</div>
+    <p class="desc">Home for Sale in Downtown Mazatlán</p>
+    <span class="cta">Ver detalle →</span>
+  </div>
+</article>
+<article class="card" data-id="21">
+  <div class="ph"><img data-pid="21" alt="Turn Key Single Level 2 BDR House w/pool. Steps from Historic District &amp; Olas Al" onerror="this.remove()"><div class="phfallback">T</div></div>
+  <div class="body">
+    <div class="zone">Centro</div>
+    <h3>Turn Key Single Level 2 BDR House w/pool. Steps from Historic District &amp; Olas Al</h3>
+    <div class="price">$4,250,000</div>
+    <div class="specs">2 rec · 1.0 baños · 120.0 m² · 170.0 m² terreno</div>
+    <p class="desc">Turn Key Single Level 2 BDR House w/pool. Steps from Historic District &amp; Olas Altas Beach</p>
+    <span class="cta">Ver detalle →</span>
+  </div>
+</article>
+<article class="card" data-id="25">
+  <div class="ph"><img data-pid="25" alt="HOUSE FOR SALE IN THE HISTORIC CENTER" onerror="this.remove()"><div class="phfallback">H</div></div>
+  <div class="body">
+    <div class="zone">Centro</div>
+    <h3>HOUSE FOR SALE IN THE HISTORIC CENTER</h3>
+    <div class="price">$4,550,000</div>
+    <div class="specs">1 rec · 1.0 baños · 46.0 m² · 148.0 m² terreno</div>
+    <p class="desc">HOUSE FOR SALE IN THE HISTORIC CENTER</p>
+    <span class="cta">Ver detalle →</span>
+  </div>
+</article>
+<article class="card" data-id="22">
+  <div class="ph"><img data-pid="22" alt="City lights Seaside" onerror="this.remove()"><div class="phfallback">C</div></div>
+  <div class="body">
+    <div class="zone">Centro</div>
+    <h3>City lights Seaside</h3>
+    <div class="price">$4,600,000</div>
+    <div class="specs">2 rec · 2.0 baños · 199.0 m² · 199.0 m² terreno</div>
+    <p class="desc">City lights Seaside</p>
+    <span class="cta">Ver detalle →</span>
+  </div>
+</article>
+<article class="card" data-id="9">
+  <div class="ph"><img data-pid="9" alt="HOUSE FOR SALE" onerror="this.remove()"><div class="phfallback">H</div></div>
+  <div class="body">
+    <div class="zone">Centro</div>
+    <h3>HOUSE FOR SALE</h3>
+    <div class="price">$4,695,000</div>
+    <div class="specs">2 rec · 2.0 baños · 169.0 m² · 92.0 m² terreno</div>
+    <p class="desc">HOUSE FOR SALE</p>
+    <span class="cta">Ver detalle →</span>
+  </div>
+</article>
+<article class="card" data-id="14">
+  <div class="ph"><img data-pid="14" alt="House in the center of Mazatlan with partial sea view" onerror="this.remove()"><div class="phfallback">H</div></div>
+  <div class="body">
+    <div class="zone">Centro</div>
+    <h3>House in the center of Mazatlan with partial sea view</h3>
+    <div class="price">$5,600,000</div>
+    <div class="specs">2 rec · 3.0 baños · 280.0 m² · 280.0 m² terreno</div>
+    <p class="desc">House in the center of Mazatlan with partial sea view</p>
+    <span class="cta">Ver detalle →</span>
+  </div>
+</article>
+<article class="card" data-id="38">
+  <div class="ph"><img data-pid="38" alt="Casa Libertad (renovada 35 Agave), Centro" onerror="this.remove()"><div class="phfallback">C</div></div>
+  <div class="body">
+    <div class="zone">Centro · Centro</div>
+    <h3>Casa Libertad (renovada 35 Agave), Centro</h3>
+    <div class="price">$5,900,000</div>
+    <div class="specs">3 rec · 3.5 baños</div>
+    <p class="desc">Casa Libertad — propiedad de una sola planta a ~30 pasos de la Plazuela Machado, Centro Histórico. Construida hace 4 años por 35 Agave y pr…</p>
+    <span class="cta">Ver detalle →</span>
+  </div>
+</article>
+<article class="card" data-id="19">
+  <div class="ph"><img data-pid="19" alt="House for Sale in Mazatlán Historic Center" onerror="this.remove()"><div class="phfallback">H</div></div>
+  <div class="body">
+    <div class="zone">Centro</div>
+    <h3>House for Sale in Mazatlán Historic Center</h3>
+    <div class="price">$10,900,000</div>
+    <div class="specs">3 rec · 3.0 baños · 433.0 m² · 411.0 m² terreno</div>
+    <p class="desc">House for Sale in Mazatlán Historic Center</p>
+    <span class="cta">Ver detalle →</span>
+  </div>
+</article>
+<article class="card" data-id="20">
+  <div class="ph"><img data-pid="20" alt="House for sale in Historical Center" onerror="this.remove()"><div class="phfallback">H</div></div>
+  <div class="body">
+    <div class="zone">Centro</div>
+    <h3>House for sale in Historical Center</h3>
+    <div class="price">$34,000,000</div>
+    <div class="specs">9 rec · 3.0 baños · 640.0 m² · 698.0 m² terreno</div>
+    <p class="desc">House for sale in Historical Center</p>
+    <span class="cta">Ver detalle →</span>
+  </div>
+</article>
+<article class="card" data-id="24">
+  <div class="ph"><img data-pid="24" alt="Mazatlan Perfect Small Casita in Centro" onerror="this.remove()"><div class="phfallback">M</div></div>
+  <div class="body">
+    <div class="zone">Centro Histórico</div>
+    <h3>Mazatlan Perfect Small Casita in Centro</h3>
+    <div class="price">$2,150,000</div>
+    <div class="specs">1 rec · 1.0 baños · 86.0 m² · 66.0 m² terreno</div>
+    <p class="desc">Mazatlan Perfect Small Casita in Centro</p>
+    <span class="cta">Ver detalle →</span>
+  </div>
+</article>
+<article class="card" data-id="11">
+  <div class="ph"><img data-pid="11" alt="HOUSE FOR SALE IN MAZATLAN HISTORIC CENTER" onerror="this.remove()"><div class="phfallback">H</div></div>
+  <div class="body">
+    <div class="zone">Centro Histórico</div>
+    <h3>HOUSE FOR SALE IN MAZATLAN HISTORIC CENTER</h3>
+    <div class="price">$3,600,000</div>
+    <div class="specs">1 rec · 2.0 baños · 107.0 m² · 113.0 m² terreno</div>
+    <p class="desc">HOUSE FOR SALE IN MAZATLAN HISTORIC CENTER</p>
+    <span class="cta">Ver detalle →</span>
+  </div>
+</article>
+<article class="card" data-id="16">
+  <div class="ph"><img data-pid="16" alt="Casa en Centro Historico" onerror="this.remove()"><div class="phfallback">C</div></div>
+  <div class="body">
+    <div class="zone">Centro Histórico</div>
+    <h3>Casa en Centro Historico</h3>
+    <div class="price">$4,216,865</div>
+    <div class="specs">3 rec · 2.0 baños · 190.0 m² · 115.0 m² terreno</div>
+    <p class="desc">Casa en Centro Historico</p>
+    <span class="cta">Ver detalle →</span>
+  </div>
+</article>
+<article class="card" data-id="34">
+  <div class="ph"><img data-pid="34" alt="Casa Buen Día — Centro Histórico" onerror="this.remove()"><div class="phfallback">C</div></div>
+  <div class="body">
+    <div class="zone">Centro Histórico</div>
+    <h3>Casa Buen Día — Centro Histórico</h3>
+    <div class="price">$6,340,000</div>
+    <div class="specs">3 rec · 2.0 baños · 162.0 m²</div>
+    <p class="desc">Welcome to Casa Buen Día! 3BR/2BA full of charm, close to beach, restaurants and Plazuela Machado. Rooftop terrace. USD 375,000 @ 16.9.</p>
+    <span class="cta">Ver detalle →</span>
+  </div>
+</article>
+<article class="card" data-id="7">
+  <div class="ph"><img data-pid="7" alt="House for Sale in Only 2 Blocks of the Malecón and Beaches" onerror="this.remove()"><div class="phfallback">H</div></div>
+  <div class="body">
+    <div class="zone">Palos Prietos</div>
+    <h3>House for Sale in Only 2 Blocks of the Malecón and Beaches</h3>
+    <div class="price">$5,761,000</div>
+    <div class="specs">6 rec · 5.0 baños · 296.0 m² · 320.0 m² terreno</div>
+    <p class="desc">House for Sale in Only 2 Blocks of the Malecón and Beaches</p>
+    <span class="cta">Ver detalle →</span>
+  </div>
+</article>
+<article class="card" data-id="37">
+  <div class="ph"><img data-pid="37" alt="Río Pánuco 418 — Casa unifamiliar en Palos Prietos" onerror="this.remove()"><div class="phfallback">R</div></div>
+  <div class="body">
+    <div class="zone">Palos Prietos · Palos Prietos</div>
+    <h3>Río Pánuco 418 — Casa unifamiliar en Palos Prietos</h3>
+    <div class="price">$6,300,000</div>
+    <div class="specs">4 rec · 4.0 baños · 333.0 m² · 250.0 m² terreno</div>
+    <p class="desc">Casa unifamiliar 4 rec/4 baños. 333 m² construcción / 250 m² terreno, 1 cajón de estacionamiento. Precio reducido de $6,900,000 a $6,300,00…</p>
+    <span class="cta">Ver detalle →</span>
+  </div>
+</article>
+<article class="card" data-id="41">
+  <div class="ph"><img data-pid="41" alt="Río Pánuco 420 — Casa en Palos Prietos" onerror="this.remove()"><div class="phfallback">R</div></div>
+  <div class="body">
+    <div class="zone">Palos Prietos · Palos Prietos</div>
+    <h3>Río Pánuco 420 — Casa en Palos Prietos</h3>
+    <div class="price">Consultar</div>
+    <div class="specs"></div>
+    <p class="desc">Casa unifamiliar de dos niveles (fachada blanca, herrería negra): cochera con portón negro, balcón con barandal de vidrio y balcón lateral…</p>
+    <span class="cta">Ver detalle →</span>
+  </div>
+</article>
+<article class="card" data-id="40">
+  <div class="ph"><img data-pid="40" alt="Casa Playa Azul 322 (2 pisos)" onerror="this.remove()"><div class="phfallback">C</div></div>
+  <div class="body">
+    <div class="zone">Playa Azul</div>
+    <h3>Casa Playa Azul 322 (2 pisos)</h3>
+    <div class="price">Consultar</div>
+    <div class="specs"></div>
+    <p class="desc">Casa de dos pisos con cochera cubierta: porton negro de hierro forjado (principal doble + peatonal), gran alero/marquesina de concreto gris…</p>
+    <span class="cta">Ver detalle →</span>
+  </div>
+</article>
+<article class="card" data-id="13">
+  <div class="ph"><img data-pid="13" alt="House for Sale in Playa Sur" onerror="this.remove()"><div class="phfallback">H</div></div>
+  <div class="body">
+    <div class="zone">Playa Sur</div>
+    <h3>House for Sale in Playa Sur</h3>
+    <div class="price">$7,990,000</div>
+    <div class="specs">4 rec · 3.0 baños · 293.0 m² · 300.0 m² terreno</div>
+    <p class="desc">House for Sale in Playa Sur</p>
+    <span class="cta">Ver detalle →</span>
+  </div>
+</article>
+<article class="card" data-id="12">
+  <div class="ph"><img data-pid="12" alt="Casa Lorena" onerror="this.remove()"><div class="phfallback">C</div></div>
+  <div class="body">
+    <div class="zone">Playa Sur</div>
+    <h3>Casa Lorena</h3>
+    <div class="price">$23,492,754</div>
+    <div class="specs">4 rec · 6.0 baños · 354.0 m² · 585.0 m² terreno</div>
+    <p class="desc">Casa Lorena</p>
+    <span class="cta">Ver detalle →</span>
+  </div>
+</article></div></div>
+
+<div class="overlay" id="ov">
+  <div class="modal" id="md"></div>
+</div>
+<script>
+const PROPS = [{"id": 39, "title": "Casa Carvajal 1216 (2 pisos)", "zone": "Carvajal", "colonia": "", "price": null, "type": "house", "sqm_c": null, "sqm_l": null, "beds": null, "baths": null, "parking": null, "desc": "Casa de dos pisos: fachada salmon con balcon terracota, porton de metal cafe (cochera/garage) + puerta peatonal, balcon superior con barandal oscuro, protecciones en ventanas y malla electrica en la azotea. Venta por propietario: aviso 'SE VENDE / CONTACTAME' con WhatsApp 669 120 12 84. Sin precio visible. Nota de Cannon: 'at construccion' (la fachada en la foto luce terminada — confirmar).", "src": "manual:casa-carvajal-1216", "photo": "img/card-01.jpg", "flags": [], "occupancy": "unknown", "title_status": "", "comm_pct": null, "sale_includes": "", "addr": "Carvajal 1216", "mls": ""}, {"id": 33, "title": "Casa en Venta en el Centro de Mazatlán", "zone": "Centro", "colonia": "Centro", "price": 1990000.0, "type": "house", "sqm_c": 115.0, "sqm_l": 145.0, "beds": 2, "baths": 1.0, "parking": null, "desc": "Casa 2 recámaras 1 baño, patio amplio, lista para reacondicionar. A 15 min de playa Olas Altas.", "src": "https://www.lamudi.com.mx/detalle/41032-73-5038debcde67-ec45-19e6b65-a230-7162", "photo": "", "flags": [], "occupancy": "unknown", "title_status": "", "comm_pct": null, "sale_includes": "", "addr": "", "mls": ""}, {"id": 15, "title": "Fixxer Upper 1 Bdr House 2 blocks from Machado Square and Cathedral", "zone": "Centro", "colonia": "", "price": 2500000.0, "type": "house", "sqm_c": 70.0, "sqm_l": 82.0, "beds": 1, "baths": 1.0, "parking": null, "desc": "Fixxer Upper 1 Bdr House 2 blocks from Machado Square and Cathedral", "src": "https://remaxsunseteagle.com/properties/fixxer-upper-1-bdr-house-2-blocks-from-machado-square-and-cathedral", "photo": "img/card-02.jpg", "flags": [], "occupancy": "unknown", "title_status": "", "comm_pct": null, "sale_includes": "", "addr": "", "mls": ""}, {"id": 27, "title": "2 Bedroom house in Mazatlán City Center", "zone": "Centro", "colonia": "", "price": 2900000.0, "type": "house", "sqm_c": 102.0, "sqm_l": 80.0, "beds": 2, "baths": 1.0, "parking": null, "desc": "2 Bedroom house in Mazatlán City Center", "src": "https://remaxsunseteagle.com/properties/2-bedroom-house-in-mazatlan-city-center", "photo": "img/card-03.jpg", "flags": [], "occupancy": "unknown", "title_status": "", "comm_pct": null, "sale_includes": "", "addr": "", "mls": ""}, {"id": 23, "title": "HOUSE FOR SALE", "zone": "Centro", "colonia": "", "price": 3800000.0, "type": "house", "sqm_c": 207.0, "sqm_l": 84.0, "beds": 5, "baths": 3.0, "parking": null, "desc": "HOUSE FOR SALE", "src": "https://remaxsunseteagle.com/properties/house-for-sale-4", "photo": "img/card-04.jpg", "flags": [], "occupancy": "unknown", "title_status": "", "comm_pct": null, "sale_includes": "", "addr": "", "mls": ""}, {"id": 8, "title": "Home for Sale in Downtown Mazatlán", "zone": "Centro", "colonia": "", "price": 4200000.0, "type": "house", "sqm_c": 104.0, "sqm_l": 251.0, "beds": 4, "baths": 1.0, "parking": null, "desc": "Home for Sale in Downtown Mazatlán", "src": "https://remaxsunseteagle.com/properties/home-for-sale-in-downtown-mazatlan", "photo": "img/card-05.jpg", "flags": [], "occupancy": "unknown", "title_status": "", "comm_pct": null, "sale_includes": "", "addr": "", "mls": ""}, {"id": 21, "title": "Turn Key Single Level 2 BDR House w/pool. Steps from Historic District & Olas Al", "zone": "Centro", "colonia": "", "price": 4250000.0, "type": "house", "sqm_c": 120.0, "sqm_l": 170.0, "beds": 2, "baths": 1.0, "parking": null, "desc": "Turn Key Single Level 2 BDR House w/pool. Steps from Historic District & Olas Altas Beach", "src": "https://remaxsunseteagle.com/properties/turn-key-single-level-2-bdr-house-wpool-steps-from-historic-district-olas-altas-beach", "photo": "img/card-06.jpg", "flags": [], "occupancy": "unknown", "title_status": "", "comm_pct": null, "sale_includes": "", "addr": "", "mls": ""}, {"id": 25, "title": "HOUSE FOR SALE IN THE HISTORIC CENTER", "zone": "Centro", "colonia": "", "price": 4550000.0, "type": "house", "sqm_c": 46.0, "sqm_l": 148.0, "beds": 1, "baths": 1.0, "parking": null, "desc": "HOUSE FOR SALE IN THE HISTORIC CENTER", "src": "https://remaxsunseteagle.com/properties/house-for-sale-in-the-historic-center", "photo": "img/card-07.jpg", "flags": [], "occupancy": "unknown", "title_status": "", "comm_pct": null, "sale_includes": "", "addr": "", "mls": ""}, {"id": 22, "title": "City lights Seaside", "zone": "Centro", "colonia": "", "price": 4600000.0, "type": "house", "sqm_c": 199.0, "sqm_l": 199.0, "beds": 2, "baths": 2.0, "parking": null, "desc": "City lights Seaside", "src": "https://remaxsunseteagle.com/properties/city-lights-seaside", "photo": "img/card-08.jpg", "flags": [], "occupancy": "unknown", "title_status": "", "comm_pct": null, "sale_includes": "", "addr": "", "mls": ""}, {"id": 9, "title": "HOUSE FOR SALE", "zone": "Centro", "colonia": "", "price": 4695000.0, "type": "house", "sqm_c": 169.0, "sqm_l": 92.0, "beds": 2, "baths": 2.0, "parking": null, "desc": "HOUSE FOR SALE", "src": "https://remaxsunseteagle.com/properties/house-for-sale-7", "photo": "img/card-09.jpg", "flags": [], "occupancy": "unknown", "title_status": "", "comm_pct": null, "sale_includes": "", "addr": "", "mls": ""}, {"id": 14, "title": "House in the center of Mazatlan with partial sea view", "zone": "Centro", "colonia": "", "price": 5600000.0, "type": "house", "sqm_c": 280.0, "sqm_l": 280.0, "beds": 2, "baths": 3.0, "parking": null, "desc": "House in the center of Mazatlan with partial sea view", "src": "https://remaxsunseteagle.com/properties/house-in-the-center-of-mazatlan-with-partial-sea-view-1", "photo": "img/card-10.jpg", "flags": [], "occupancy": "unknown", "title_status": "", "comm_pct": null, "sale_includes": "", "addr": "", "mls": ""}, {"id": 38, "title": "Casa Libertad (renovada 35 Agave), Centro", "zone": "Centro", "colonia": "Centro", "price": 5900000.0, "type": "house", "sqm_c": null, "sqm_l": null, "beds": 3, "baths": 3.5, "parking": null, "desc": "Casa Libertad — propiedad de una sola planta a ~30 pasos de la Plazuela Machado, Centro Histórico. Construida hace 4 años por 35 Agave y protegida por el INAH. 3 recámaras, 3.5 baños, pisos de cemento pulido, arcos interiores, techos altos, patios interiores con ladrillo expuesto, cocina abierta con isla y azulejo artesanal, alberca en azotea con área lounge techada, lavandería equipada, minisplit. Se vende sin muebles, lista para habitarse. A ~5 min caminando de Olas Altas y la playa.", "src": "https://www.facebook.com/marketplace/item/1353690773331610/", "photo": "img/card-11.jpg", "flags": [], "occupancy": "vacant", "title_status": "", "comm_pct": null, "sale_includes": "Sin muebles (unfurnished)", "addr": "Calle Libertad", "mls": ""}, {"id": 19, "title": "House for Sale in Mazatlán Historic Center", "zone": "Centro", "colonia": "", "price": 10900000.0, "type": "house", "sqm_c": 433.0, "sqm_l": 411.0, "beds": 3, "baths": 3.0, "parking": null, "desc": "House for Sale in Mazatlán Historic Center", "src": "https://remaxsunseteagle.com/properties/house-for-sale-in-mazatlan-historic-center", "photo": "img/card-12.jpg", "flags": [], "occupancy": "unknown", "title_status": "", "comm_pct": null, "sale_includes": "", "addr": "", "mls": ""}, {"id": 20, "title": "House for sale in Historical Center", "zone": "Centro", "colonia": "", "price": 34000000.0, "type": "house", "sqm_c": 640.0, "sqm_l": 698.0, "beds": 9, "baths": 3.0, "parking": null, "desc": "House for sale in Historical Center", "src": "https://remaxsunseteagle.com/properties/house-for-sale-in-historical-center", "photo": "img/card-13.jpg", "flags": [], "occupancy": "unknown", "title_status": "", "comm_pct": null, "sale_includes": "", "addr": "", "mls": ""}, {"id": 24, "title": "Mazatlan Perfect Small Casita in Centro", "zone": "Centro Histórico", "colonia": "", "price": 2150000.0, "type": "house", "sqm_c": 86.0, "sqm_l": 66.0, "beds": 1, "baths": 1.0, "parking": null, "desc": "Mazatlan Perfect Small Casita in Centro", "src": "https://remaxsunseteagle.com/properties/mazatlan-perfect-small-casita-in-centro", "photo": "img/card-14.jpg", "flags": [], "occupancy": "unknown", "title_status": "", "comm_pct": null, "sale_includes": "", "addr": "", "mls": ""}, {"id": 11, "title": "HOUSE FOR SALE IN MAZATLAN HISTORIC CENTER", "zone": "Centro Histórico", "colonia": "", "price": 3600000.0, "type": "house", "sqm_c": 107.0, "sqm_l": 113.0, "beds": 1, "baths": 2.0, "parking": null, "desc": "HOUSE FOR SALE IN MAZATLAN HISTORIC CENTER", "src": "https://remaxsunseteagle.com/properties/house-for-sale-in-mazatlan-historic-center-2", "photo": "img/card-15.jpg", "flags": [], "occupancy": "unknown", "title_status": "", "comm_pct": null, "sale_includes": "", "addr": "", "mls": ""}, {"id": 16, "title": "Casa en Centro Historico", "zone": "Centro Histórico", "colonia": "", "price": 4216865.0, "type": "house", "sqm_c": 190.0, "sqm_l": 115.0, "beds": 3, "baths": 2.0, "parking": null, "desc": "Casa en Centro Historico", "src": "https://remaxsunseteagle.com/properties/casa-en-centro-historico", "photo": "img/card-16.jpg", "flags": [], "occupancy": "unknown", "title_status": "", "comm_pct": null, "sale_includes": "", "addr": "", "mls": ""}, {"id": 34, "title": "Casa Buen Día — Centro Histórico", "zone": "Centro Histórico", "colonia": "", "price": 6340000.0, "type": "house", "sqm_c": 162.0, "sqm_l": null, "beds": 3, "baths": 2.0, "parking": null, "desc": "Welcome to Casa Buen Día! 3BR/2BA full of charm, close to beach, restaurants and Plazuela Machado. Rooftop terrace. USD 375,000 @ 16.9.", "src": "https://www.lamudi.com.mx/detalle/41032-73-763a0897e615-4666-19170de-8bf3-8047", "photo": "", "flags": [], "occupancy": "unknown", "title_status": "", "comm_pct": null, "sale_includes": "", "addr": "", "mls": ""}, {"id": 7, "title": "House for Sale in Only 2 Blocks of the Malecón and Beaches", "zone": "Palos Prietos", "colonia": "", "price": 5761000.0, "type": "house", "sqm_c": 296.0, "sqm_l": 320.0, "beds": 6, "baths": 5.0, "parking": null, "desc": "House for Sale in Only 2 Blocks of the Malecón and Beaches", "src": "https://remaxsunseteagle.com/properties/house-for-sale-in-only-2-blocks-of-the-malecon-and-beaches", "photo": "img/card-17.jpg", "flags": [], "occupancy": "unknown", "title_status": "", "comm_pct": null, "sale_includes": "", "addr": "", "mls": ""}, {"id": 37, "title": "Río Pánuco 418 — Casa unifamiliar en Palos Prietos", "zone": "Palos Prietos", "colonia": "Palos Prietos", "price": 6300000.0, "type": "house", "sqm_c": 333.0, "sqm_l": 250.0, "beds": 4, "baths": 4.0, "parking": 1, "desc": "Casa unifamiliar 4 rec/4 baños. 333 m² construcción / 250 m² terreno, 1 cajón de estacionamiento. Precio reducido de $6,900,000 a $6,300,000. Documentación en regla. Zona céntrica de Palos Prietos, cercana a Malecón, playas, restaurantes y hospitales. Summit Grupo Inmobiliario.", "src": "https://www.vivanuncios.com.mx/a-venta-casa/palos-prietos/casa-en-venta-en-palos-palos-prietos-en-mazatlan-sinaloa/150217871", "photo": "img/card-18.jpg", "flags": [], "occupancy": "", "title_status": "", "comm_pct": null, "sale_includes": "", "addr": "Río Pánuco 418, Col. Palos Prietos", "mls": ""}, {"id": 41, "title": "Río Pánuco 420 — Casa en Palos Prietos", "zone": "Palos Prietos", "colonia": "Palos Prietos", "price": null, "type": "house", "sqm_c": null, "sqm_l": null, "beds": null, "baths": null, "parking": null, "desc": "Casa unifamiliar de dos niveles (fachada blanca, herrería negra): cochera con portón negro, balcón con barandal de vidrio y balcón lateral con barandal metálico. En venta por propietario (letrero SE VENDE). Sin precio publicado.", "src": "", "photo": "img/card-19.jpg", "flags": [], "occupancy": "", "title_status": "", "comm_pct": null, "sale_includes": "", "addr": "Río Pánuco 420, Col. Palos Prietos, Mazatlán, Sinaloa, México", "mls": ""}, {"id": 40, "title": "Casa Playa Azul 322 (2 pisos)", "zone": "Playa Azul", "colonia": "", "price": null, "type": "house", "sqm_c": null, "sqm_l": null, "beds": null, "baths": null, "parking": null, "desc": "Casa de dos pisos con cochera cubierta: porton negro de hierro forjado (principal doble + peatonal), gran alero/marquesina de concreto gris sobre la cochera, pilar blanco con el numero 322 y dos timbres, ventana superior con reja negra. Condicion habitada/regular (desgaste menor; maleza en el pavimento). Venta por propietario: aviso 'SE VENDE' tel/WhatsApp 669 123 0692. Sin precio visible.", "src": "manual:casa-playa-azul-322", "photo": "img/card-20.jpg", "flags": [], "occupancy": "unknown", "title_status": "", "comm_pct": null, "sale_includes": "", "addr": "Playa Azul 322", "mls": ""}, {"id": 13, "title": "House for Sale in Playa Sur", "zone": "Playa Sur", "colonia": "", "price": 7990000.0, "type": "house", "sqm_c": 293.0, "sqm_l": 300.0, "beds": 4, "baths": 3.0, "parking": null, "desc": "House for Sale in Playa Sur", "src": "https://remaxsunseteagle.com/properties/house-for-sale-in-playa-sur-2", "photo": "img/card-21.jpg", "flags": [], "occupancy": "unknown", "title_status": "", "comm_pct": null, "sale_includes": "", "addr": "", "mls": ""}, {"id": 12, "title": "Casa Lorena", "zone": "Playa Sur", "colonia": "", "price": 23492754.0, "type": "house", "sqm_c": 354.0, "sqm_l": 585.0, "beds": 4, "baths": 6.0, "parking": null, "desc": "Casa Lorena", "src": "https://remaxsunseteagle.com/properties/casa-lorena", "photo": "img/card-22.jpg", "flags": [], "occupancy": "unknown", "title_status": "", "comm_pct": null, "sale_includes": "", "addr": "", "mls": ""}];
+// Assign each card image from PROPS (single photo source; modal reuses it)
+(function() {
+  document.querySelectorAll('.card img[data-pid]').forEach(function(img) {
+    var p = PROPS.find(function(x) { return String(x.id) === img.getAttribute('data-pid'); });
+    if (p && p.photo) img.src = p.photo;
+  });
+})();
+function fmtPrice(v) { return v ? '$' + Number(v).toLocaleString('en-US') : 'Consultar'; }
+function openModal(id) {
+  const p = PROPS.find(x => String(x.id) === String(id));
+  if (!p) return;
+  const flagHtml = (p.flags && p.flags.length)
+    ? '<div class="flags"><h4>En revision - no listada al cliente</h4>' +
+      p.flags.map(f => '<div class="flag"><b>[' + f.severity.toUpperCase() + '/' + f.flag_type + ']</b> ' + (f.title || '') + ' - ' + (f.detail || '') + '</div>').join('') +
+      '</div>' : '';
+  const photo = p.photo ? '<img class="mph" src="' + p.photo + '" onerror="this.remove()">' : '';
+  let kv = '';
+  if (p.sqm_c) kv += '<b>Construccion</b><span>' + p.sqm_c + ' m2</span>';
+  if (p.sqm_l) kv += '<b>Terreno</b><span>' + p.sqm_l + ' m2</span>';
+  if (p.beds) kv += '<b>Recamaras</b><span>' + p.beds + '</span>';
+  if (p.baths) kv += '<b>Banos</b><span>' + p.baths + '</span>';
+  if (p.parking) kv += '<b>Estacionamiento</b><span>' + p.parking + '</span>';
+  if (p.occupancy) kv += '<b>Ocupacion</b><span>' + p.occupancy + '</span>';
+  if (p.title_status) kv += '<b>Titulo</b><span>' + p.title_status + '</span>';
+  if (p.comm_pct) kv += '<b>Comision</b><span>' + p.comm_pct + '%</span>';
+  if (p.mls) kv += '<b>MLS</b><span>' + p.mls + '</span>';
+  document.getElementById('md').innerHTML =
+    '<button class="close" onclick="closeModal()">&times;</button>' +
+    photo +
+    '<h2>' + p.title + '</h2>' +
+    '<div class="zone">' + p.zone + (p.colonia ? ' - ' + p.colonia : '') + ' - ' + p.type + '</div>' +
+    '<div class="price" style="font-size:26px">' + fmtPrice(p.price) + '</div>' +
+    (p.addr ? '<div class="muted">' + p.addr + '</div>' : '') +
+    (kv ? '<div class="kv">' + kv + '</div>' : '') +
+    (p.desc ? '<p class="detail-desc">' + p.desc + '</p>' : '') +
+    flagHtml +
+    (p.src ? '<a class="src" href="' + p.src + '" target="_blank">Ver publicacion original</a>' : '');
+  document.getElementById('ov').classList.add('open');
+}
+function closeModal() { document.getElementById('ov').classList.remove('open'); }
+document.querySelector('.grid').addEventListener('click', function(e) {
+  const card = e.target.closest('.card');
+  if (card) openModal(card.getAttribute('data-id'));
+});
+document.getElementById('ov').addEventListener('click', function(e) { if (e.target.id === 'ov') closeModal(); });
+document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeModal(); });
+</script>
+</body>
+</html>
